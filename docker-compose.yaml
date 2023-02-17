@@ -1,0 +1,21 @@
+# Example Docker Compose File
+version: "3"
+
+# dont forget to fill in .env file
+services:
+
+  postgres:
+    image: postgres:14
+    restart: unless-stopped
+    # expose database for the host if needed
+    ports:
+      - "5432:5432"
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=password
+    volumes:
+      - postgres:/var/lib/postgresql/data
+
+volumes:
+  postgres:
+    name: postgres
