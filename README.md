@@ -1,6 +1,6 @@
 ## Download postgres and docker
 ```bash
-    sudo pacman -S postgres docker docker-compose
+    sudo pacman -S postgresql docker docker-compose
 ```  
 
 ## Setup docker
