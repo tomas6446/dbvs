@@ -1,11 +1,29 @@
-SELECT nr, vardas, pavarde
-FROM stud.skaitytojas
-WHERE nr IN (SELECT DISTINCT skaitytojas
-             FROM stud.egzempliorius
-             WHERE skaitytojas > 0);
+-- 1
+SELECT DISTINCT vardas, pavarde
+FROM stud.skaitytojas,
+     stud.egzempliorius
+WHERE stud.skaitytojas.nr = stud.egzempliorius.skaitytojas;
+
+-- 2
+SELECT s.vardas, s.pavarde, a.isbn, s2.vardas, s2.pavarde, b.isbn
+FROM stud.egzempliorius a
+         INNER JOIN stud.skaitytojas s
+                    ON a.skaitytojas = s.nr
+         INNER JOIN stud.egzempliorius b
+                    ON a.isbn = b.isbn
+                        AND a.skaitytojas > 0
+                        AND b.skaitytojas > 0
+                        AND a.skaitytojas != b.skaitytojas
+         INNER JOIN stud.skaitytojas s2
+
+-- 3
+SELECT DISTINCT a.metai, count(a.metai)
+FROM stud.knyga a
+group by a.metai;
 
 
-SELECT a.nr, a.skaitytojas
-            FROM stud.egzempliorius a
-INNER JOIN stud.egzempliorius b ON a.nr = b.nr WHERE b.nr IN (SELECT b.nr
-            FROM stud.egzempliorius b) AND a.skaitytojas > 0
+-- 4
+SELECT nr, isbn, skaitytojas, paimta, grazinti
+FROM stud.egzempliorius
+
+
