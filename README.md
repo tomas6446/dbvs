@@ -11,6 +11,5 @@
 
 ## Connect to database
 ```bash
-    sudo -iu postgres
     PGPASSWORD=password psql -h localhost -p 5432 -d postgres -U postgres
 ```
