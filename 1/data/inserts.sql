@@ -22,14 +22,14 @@ INSERT INTO Stud.Autorius VALUES('9997-03-303-5', 'Petras',  'Petraitis' ) ;
 INSERT INTO Stud.Autorius VALUES('9997-03-303-5', 'Simas',   'Baltakis'  ) ;
 INSERT INTO Stud.Autorius VALUES('9998-01-104-3', 'Jonas',   'Petraitis' ) ;
 
-INSERT INTO Stud.Skaitytojas VALUES(1000, '50101010222', 'Jonas',   'Petraitis', '2001-01-01', 'Tiesioji 1-10' ) ;
+INSERT INTO Stud.Skaitytojas VALUES(1000, '50101010222', 'Jonas',   'Petraitis', '2001-01-01', 'Tiesioji task-10' ) ;
 INSERT INTO Stud.Skaitytojas VALUES(1001, '39902200102', 'Jonas',   'Onaitis',   '2002-02-28', 'Lenktoji 20' ) ;
 INSERT INTO Stud.Skaitytojas VALUES(1010, '49903021111', 'Milda',   'Onaityte',  '2002-03-02', 'Didzioji 21-5' ) ;
 INSERT INTO Stud.Skaitytojas VALUES(1015, '49906301011', 'Onute',   'Petraityte','2002-06-30', 'Didzioji 21-5' ) ;
-INSERT INTO Stud.Skaitytojas VALUES(1021, '39905301031', 'Petras',  'Jonaitis',  '2002-05-30', 'Mazoji 1' ) ;
+INSERT INTO Stud.Skaitytojas VALUES(1021, '39905301031', 'Petras',  'Jonaitis',  '2002-05-30', 'Mazoji task' ) ;
 INSERT INTO Stud.Skaitytojas VALUES(1032, '39912310031', 'Tadas',   'Onaitis',   '2002-12-31', 'Tiesioji 12' ) ;
-INSERT INTO Stud.Skaitytojas VALUES(1033, '49911300131', 'Grazina', 'Petraityte','2002-11-30', 'Tiesioji 1-10' ) ;
-INSERT INTO Stud.Skaitytojas VALUES(1011, '50111010055', 'Jonas', 'Adomaitis','2001-01-01', 'Mazoji 1' ) ;
+INSERT INTO Stud.Skaitytojas VALUES(1033, '49911300131', 'Grazina', 'Petraityte','2002-11-30', 'Tiesioji task-10' ) ;
+INSERT INTO Stud.Skaitytojas VALUES(1011, '50111010055', 'Jonas', 'Adomaitis','2001-01-01', 'Mazoji task' ) ;
 
 INSERT INTO Stud.Egzempliorius VALUES(32101, '9998-01-101-9', NULL, NULL, NULL ) ;
 INSERT INTO Stud.Egzempliorius VALUES(32102, '9998-01-101-9', NULL, NULL, NULL ) ;
