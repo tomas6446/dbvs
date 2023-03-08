@@ -5,8 +5,8 @@
 
 ## Setup docker
 ```bash
-    systemctl enable --now docker
-    docker compose up -d
+    sudo systemctl enable --now docker
+    sudo docker compose up -d
 ```  
 
 ## Connect to database
