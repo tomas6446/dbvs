@@ -1,4 +1,4 @@
-SELECT s1.vardas, s1.pavarde, a.isbn, s2.vardas, s2.pavarde, b.isbn
+SELECT DISTINCT s1.vardas, s1.pavarde, a.isbn, s2.vardas, s2.pavarde, b.isbn
 FROM stud.egzempliorius a
          JOIN stud.egzempliorius b ON a.isbn = b.isbn
          JOIN stud.skaitytojas s1 ON s1.nr = a.skaitytojas
