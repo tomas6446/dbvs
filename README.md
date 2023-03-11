@@ -14,7 +14,3 @@
     PGPASSWORD=password psql -h localhost -p 5432 -d postgres -U postgres
 ```
 
-## Run inserts and table creation
-```
-    psql -d myDataBase -a -f myInsertFile
-```
