@@ -5,3 +5,5 @@ FROM stud.egzempliorius a
          JOIN stud.skaitytojas s2 ON s2.nr = b.skaitytojas
 WHERE s1.vardas != s2.vardas
   AND s1.pavarde != s2.pavarde;
+
+

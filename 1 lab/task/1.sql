@@ -1,4 +1,3 @@
-SELECT DISTINCT vardas, pavarde
-FROM stud.skaitytojas,
-     stud.egzempliorius
-WHERE stud.skaitytojas.nr = stud.egzempliorius.skaitytojas;
+SELECT e.nr, e.grazinti
+FROM stud.egzempliorius e
+WHERE e.skaitytojas IS NOT NULL;
