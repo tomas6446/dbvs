@@ -1,0 +1,3 @@
+[submodule "2 lab/jdbc-car-rental"]
+	path = 2 lab/jdbc-car-rental
+	url = https://github.com/tomas6446/jdbc-car-rental
