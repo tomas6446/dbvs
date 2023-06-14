@@ -12,3 +12,4 @@ group by a.table_name, a.table_schema;
 -- kiek is viso stulpelio,
 -- turi rakta ar neturi,
 -- kiek yra stulpeliu kuriu tipas yra skaicius
+
